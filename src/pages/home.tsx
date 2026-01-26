@@ -46,17 +46,26 @@ function Home() {
 
         {/* Özellikler */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
-          <div className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer">
+          <div 
+            onClick={() => navigate('/books/add')}
+            className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer"
+          >
             <FaPlus className="text-4xl mb-3 text-cyan-400 mx-auto group-hover:scale-125 group-hover:rotate-90 transition-all duration-300" />
             <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-300 transition-colors">Kitap Ekle</h3>
             <p className="text-cyan-200 text-sm">Okuduğunuz kitapları kolayca ekleyin</p>
           </div>
-          <div className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer">
+          <div 
+            onClick={() => navigate('/books')}
+            className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer"
+          >
             <FaChartBar className="text-4xl mb-3 text-cyan-400 mx-auto group-hover:scale-125 transition-all duration-300" />
             <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-300 transition-colors">İstatistikler</h3>
             <p className="text-cyan-200 text-sm">Günlük okuma hızınızı görün</p>
           </div>
-          <div className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer">
+          <div 
+            onClick={() => navigate('/books')}
+            className="group bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer"
+          >
             <FaEdit className="text-4xl mb-3 text-cyan-400 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
             <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-300 transition-colors">Düzenle</h3>
             <p className="text-cyan-200 text-sm">Kitap bilgilerini güncelleyin</p>
