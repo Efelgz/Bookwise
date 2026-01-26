@@ -2,8 +2,9 @@ export interface IBook {
     id: string;
     title: string;
     author: string;
-    year: number;
     genre: string;
-    description: string;
-    coverImageUrl?: string; 
+    totalPages: number;
+    startDate: string;
+    endDate: string;
+    coverImageUrl?: string;
 }
