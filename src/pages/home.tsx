@@ -32,14 +32,14 @@ function Home() {
       {/* Arka plan efekti */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1920')] bg-cover bg-center opacity-10"></div>
       
-      <div className="relative min-h-screen flex flex-col items-center justify-center px-4">
+      <div className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-8 md:pt-0">
         {/* Logo ve başlık */}
         <div className="text-center mb-8">
-          <FaBook className="text-8xl text-cyan-400 mb-6 mx-auto" />
-          <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-sky-500 mb-4">
+          <FaBook className="text-6xl md:text-8xl text-cyan-400 mb-4 md:mb-6 mx-auto" />
+          <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-sky-500 mb-4">
             Bookwise
           </h1>
-          <p className="text-xl text-cyan-200 max-w-md mx-auto">
+          <p className="text-lg md:text-xl text-cyan-200 max-w-md mx-auto">
             Okuduğunuz kitapları takip edin, okuma hızınızı ölçün
           </p>
         </div>
