@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+ 📚 Bookwise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kitap okuma alışkanlıklarınızı takip etmenizi sağlayan modern ve şık bir web uygulaması.
 
-Currently, two official plugins are available:
+React
+TypeScript
+TailwindCss
+Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Demo
 
-## React Compiler
+Canlı Site: https://bookwise-efe.netlify.app/books
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ekran Görüntüleri
 
-## Expanding the ESLint configuration
+Ana Sayfa
+<img width="1216" height="707" alt="Home" src="https://github.com/user-attachments/assets/8aeeccfc-b361-4131-b1a8-14495b2ab789" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Kitap Listesi
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<img width="1212" height="708" alt="Books" src="https://github.com/user-attachments/assets/e24a2889-1b36-47af-8d7b-fdf06527d0ab" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Kitap Ekleme
+<img width="1208" height="695" alt="add-book" src="https://github.com/user-attachments/assets/e1d87fd3-3ce5-41ed-bc8c-eb8aff507dc2" />
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Özellikler
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-Kitap Ekleme Okuduğunuz kitapları kolayca ekleyin
+-Okuma Hızı Hesaplama Günde kaç sayfa okumanız gerektiğini görün
+-Düzenleme & Silme Kitap bilgilerini güncelleyin veya silin
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Teknolojiler
+
+| Teknoloji
+| React 19
+| TypeScript 
+| Vite
+| TailwindCSS 4
+| React Router
+
+Kurulum
+
+bash
+Repoyu klonlayın
+git clone https://github.com/Efelgz/Bookwise.git
+
+Proje dizinine gidin
+cd Bookwise
+
+Bağımlılıkları yükleyin
+npm install
+
+Geliştirme sunucusunu başlatın
+npm run dev
+
+Kullanım
+
+1.Ana Sayfa "Başla" butonuna tıklayarak kitap listesine gidin
+2.Kitap Ekle: "Yeni Kitap Ekle" butonuna tıklayın
+3.Bilgileri Girin: Kitap adı, yazar, tür, sayfa sayısı ve tarihler
+4Kaydet: Kitabınız listeye eklenir ve günlük okuma hızınız hesaplanır
