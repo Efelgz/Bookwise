@@ -56,7 +56,10 @@ npm run dev
 
 Kullanım
 
-1.Ana Sayfa "Başla" butonuna tıklayarak kitap listesine gidin
-2.Kitap Ekle: "Yeni Kitap Ekle" butonuna tıklayın
-3.Bilgileri Girin: Kitap adı, yazar, tür, sayfa sayısı ve tarihler
-4Kaydet: Kitabınız listeye eklenir ve günlük okuma hızınız hesaplanır
+1. Ana Sayfa "Başla" butonuna tıklayarak kitap listesine gidin
+
+2. Kitap Ekle: "Yeni Kitap Ekle" butonuna tıklayın
+
+3. Bilgileri Girin: Kitap adı, yazar, tür, sayfa sayısı ve tarihler
+
+4. Kaydet: Kitabınız listeye eklenir ve günlük okuma hızınız hesaplanır
