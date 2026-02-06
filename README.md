@@ -9,7 +9,7 @@ Vite
 
  Demo
 
-Canlı Site: https://bookwise-efe.netlify.app/books
+Canlı Site: https://bookwise-efe.netlify.app/
 
 Ekran Görüntüleri
 
